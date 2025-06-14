@@ -1,4 +1,3 @@
-
 # 📧 AI Email Summarizer API
 
 This is a Node.js + TypeScript backend project that connects to your Gmail inbox, fetches recent emails, and summarizes their content using Google's Gemini Pro (`@google/genai`) API. The summarized results are exposed through a REST API.
@@ -16,12 +15,12 @@ This is a Node.js + TypeScript backend project that connects to your Gmail inbox
 
 ## 🧱 Tech Stack
 
-| Layer         | Tool                          |
-|---------------|-------------------------------|
-| Language      | Node.js + TypeScript          |
-| Framework     | Express                       |
-| AI Model      | Google Gemini (`@google/genai`) |
-| Email API     | Gmail API (OAuth2)            |
+| Layer     | Tool                              |
+| --------- | --------------------------------- |
+| Language  | Node.js + TypeScript              |
+| Framework | Express                           |
+| AI Model  | Google Gemini (`@google/genai`) |
+| Email API | Gmail API (OAuth2)                |
 
 ---
 
@@ -75,7 +74,7 @@ GMAIL_REDIRECT_URI=http://localhost:3000/auth/callback
 ### 4. Run the App
 
 ```bash
-npx ts-node-dev src/server.ts
+npm run dev
 ```
 
 Your server will start on: `http://localhost:3000`
@@ -89,6 +88,7 @@ Your server will start on: `http://localhost:3000`
 **Description**: Fetches the latest emails from Gmail and returns Gemini-generated summaries.
 
 **Sample Response**:
+
 ```json
 {
   "summaries": [
@@ -119,6 +119,6 @@ MIT
 
 ## 🙋‍♂️ Author
 
-**Ashish Verma**  
-Backend Engineer | Tech Enthusiast  
+**Ashish Verma**
+Backend Engineer | Tech Enthusiast
 [GitHub](https://github.com/your-username)
